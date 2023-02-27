@@ -2,7 +2,7 @@ import React from "react";
 
 class PersonRow extends React.Component {
     generateTr = (person, key) => {
-        let classNames = 'table-striped table-hover table-bordered';
+        let classNames = 'table table-striped table-hover table-bordered';
         if (person.age > 65) {
             classNames += ' bg-danger';
         }
@@ -29,7 +29,7 @@ class PersonRow extends React.Component {
     render() {
         const { people } = this.props;
 
-        return <table className='table-striped table-hover table-bordered'>
+        return <table className='table table-striped table-hover table-bordered'>
             <thead>
                 {this.generateHeader(people)}
             </thead>
